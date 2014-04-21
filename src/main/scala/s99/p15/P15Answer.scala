@@ -7,5 +7,5 @@ package s99.p15
 
 object P15Answer {
   def duplicateN[A](n: Int, ls: List[A]): List[A] =
-    ls flatMap { List.make(n, _) }
+    ls flatMap { List.fill(n)(_) } // make is replaced with fill to make it compile
 }

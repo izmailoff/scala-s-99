@@ -10,5 +10,5 @@ package s99.p12
 
 object P12Answer {
   def decode[A](ls: List[(Int, A)]): List[A] =
-    ls flatMap { e => List.make(e._1, e._2) }
+    ls flatMap { e => List.fill(e._1)(e._2) } // make is replaced with fill to make it compile
 }

@@ -11,6 +11,7 @@ Scala-S-99 is an SBT Scala project with solutions for
 Original page with problems and solutions is here:
 http://aperiodic.net/phil/scala/s-99/
 
+Compare to [Haskell H99](https://github.com/izmailoff/haskell-h99) - same problems solved in Haskell.
 
 Project Structure
 ======

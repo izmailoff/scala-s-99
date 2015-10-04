@@ -2,7 +2,7 @@ Build Status
 ======
 [![Build Status](https://travis-ci.org/izmailoff/scala-s-99.png?branch=master)](https://travis-ci.org/izmailoff/scala-s-99)
 
-[![Coverage Status](https://coveralls.io/repos/izmailoff/scala-s-99/badge.svg?branch=master&service=github)](https://coveralls.io/github/izmailoff/scala-s-99?branch=master)
+[![Coverage Status](https://coveralls.io/repos/izmailoff/scala-s-99/badge.png?branch=master&service=github)](https://coveralls.io/github/izmailoff/scala-s-99?branch=master)
 
 About
 ======

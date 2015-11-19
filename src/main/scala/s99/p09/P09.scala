@@ -3,11 +3,13 @@ package s99.p09
 object P09 {
 
   def pack[T](input: List[T]): List[List[T]] =
-    input.foldRight(Nil : List[List[T]]) ((e, accu) => accu match {
-      case Nil => List(List(e))
-      case curList@(h :: t) if e == h => List(e) :: curList
-      case curList@(h :: t) => List(List(e)) ::: curList
-  })
+    input.foldRight(List(Nil): List[List[T]]) {
+      (e, accu) => accu match {
+        case List(Nil) => List(List(e))
+        case (h :: t) :: o if h == e => (e :: h :: t) :: o
+        case curList :: o => List(e) :: curList :: o
+      }
+    }
 
   // no helper functions used like fold:
   def packOld[T](input: List[T]): List[List[T]] = {
